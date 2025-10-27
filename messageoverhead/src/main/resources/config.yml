@@ -6,19 +6,19 @@ version: 1.3 #DONT TOUCH!
 
 settings: #plugin settings
   listener: #General listener. If it is disabled, holograms can only be called by a command.
-    enable: true
-    chat:
-      enable: true #Chat listener
-      generalChat: #The hologram appears if the player wrote a message in the general chat
-        enable: true
-        bubbleConfig: "messages" #The configuration for this message. In this case, the "messages" configuration applies
-      privateChat: # /tell or /msg command
-        enable: true
-        bubbleConfig: "privateMessages"
+    chat: true
+  message:
+    clearColorFromPlayerMessage: false
   command:
     moh-send:
       enable: true
       bubbleConfig: "messages"
+  generalChat: #The hologram appears if the player wrote a message in the general chat
+      enable: true
+      bubbleConfig: "messages" #The configuration for this message. In this case, the "messages" configuration applies
+  privateChat: # /tell or /msg command
+      enable: true
+      bubbleConfig: "privateMessages"
 
 testConfigBubble1: #Some message configuration
   isBubble: true
